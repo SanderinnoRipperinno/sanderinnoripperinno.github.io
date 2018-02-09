@@ -26,7 +26,7 @@
 				<div class="col-xs-12 col-sm-12 col-md-2">
 				
 					<h4>Menu</h4>
-					<a class="button-2" href="http://allrecipes.nl/recept/7477/pepperoni--chorizo-en-mozzarella-pizza.aspx" style="padding-left: 41px; padding-right: 41px;">Sauce</a>
+					<a class="button-2" href="http://allrecipes.nl/recept/7477/pepperoni--chorizo-en-mozzarella-pizza.aspx">Sauce</a>
 					<a class="button-2" href="https://www.bettycrocker.com/recipes/spaghetti-pizza/63ae508b-aa7b-4c9a-915d-75aba5fc4b61">More Sauce</a>				
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8">
@@ -43,9 +43,9 @@
 					
 			   
 					<form class="navbar-form pull-left">
-						<input type="text" class="form-control" style="margin-top: 16px;" placeholder="Vul hier uw naam in...">
+						<input type="text" class="form-control" placeholder="Vul hier uw naam in...">
 						<input type="text" class="form-control" placeholder="...en hier uw reactie!">
-						<button type="submit" class="btn btn-default" style="margin-top: 5px; margin-bottom: 10px; display: inline;">Submit</button>
+						<button type="submit" class="btn btn-default">Submit</button>
 					</form>   
 				</div>
 			  
@@ -90,7 +90,7 @@
 						  </div>
 						</div>
 					
-					<button type="button" class="button-2" style="padding-left: 26px; padding-right: 27px;" data-toggle="modal" data-target="#d-recept">Deel Recept</button>
+					<button type="button" class="button-2" data-toggle="modal" data-target="#d-recept">Deel Recept</button>
 						<div class="modal fade" id="d-recept" tabindex="-1" role="dialog" aria-labelledby="d-recept" aria-hidden="true">
 							  <div class="modal-dialog" role="document">
 								<div class="modal-content">
@@ -103,7 +103,16 @@
 								  <div class="modal-body">
 									<div class="row">
 										<div class="col-md-2">
-											<img src="./images/fb-icon.png" alt="Facebook logo" height="40">
+											<div class="fbico">
+												<a href="https://www.facebook.com/">
+													<img src="./images/fb-icon.png" alt="Facebook logo" height="40">
+												</a>
+											</div>
+											<div class="twitico">
+												<a href="https://twitter.com/">
+													<img src="./images/twitter.png" alt="Twitter logo" height="37">
+												</a>
+											</div>
 										</div>
 										<div class="col-md-10">
 											<form>
@@ -126,5 +135,28 @@
 				</div>
 			</div>
 		</div>
+		
+		<!-- Scroll Top -->
+		
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./images/arrow.png" alt="Top" height="25"></button>
+		
+		<script>
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+				}
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
 	</body>
 </html>
