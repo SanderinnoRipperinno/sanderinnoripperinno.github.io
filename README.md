@@ -1,1 +1,1 @@
-Hallo, deze link leid je naar de index.html! --> https://sanderinnoripperinno.github.io/index.html
+Hallo, deze link helpt je naar de index.html! --> https://sanderinnoripperinno.github.io/index.html
