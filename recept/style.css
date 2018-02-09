@@ -51,7 +51,7 @@ text-align: center;
 
 /* Buttons, Forms, Body en Footer CSS */
 
-img {
+.finish {
 display: block;
 margin-left: auto;
 margin-right: auto;
@@ -180,6 +180,19 @@ background-color: #b71c0b;
 	height: 300px;		
 	width: 300px;
 	}
+	
+	.fbico img {
+	height: 40px !important;
+	width: 40px !important;
+	display: inline;	
+	}
+
+	.twitico img {
+	height: 37px !important;
+	width: 37px !important;
+	display: inline;
+	}
+
 }
 
 /*@media screen and (min-width: 769px max-width: 988px) {
@@ -222,5 +235,15 @@ background-color: #b71c0b;
 	.img-fluid {
 	height: 150px;	
 	width: 300px;
+	}
+	
+	.fbico {
+	height: 40px !important;
+	display: inline;	
+	}
+
+	.twitico {
+	height: 37px !important;
+	display: inline;
 	}
 }
